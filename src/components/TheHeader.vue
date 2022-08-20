@@ -19,7 +19,6 @@ export default {
 <style lang="scss" scoped>
 
 header {
-    //background-color: #2471a3;
     background-color: #3498db;
     border-bottom: 20px solid #f2f4f6;
     color: #f8f9fa;
@@ -29,7 +28,6 @@ header {
 nav {
     display: flex;
     justify-content: space-between;
-
 
     a,
     a:visited {

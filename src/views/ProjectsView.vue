@@ -25,11 +25,6 @@ export default {
         return {
             projects: projects,
         }
-    },
-    provide() {
-        return {
-            projects: this.projects,
-        }
     }
 }
 </script>

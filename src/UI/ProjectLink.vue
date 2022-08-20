@@ -17,7 +17,6 @@ export default {
 <style lang="scss" scoped>
 a {
     background-color: #f4d03f;
-    //color: #566573;
     color: #273746;
     text-decoration: none;
     padding: 1rem 2rem;

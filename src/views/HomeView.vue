@@ -19,7 +19,6 @@
 <script>
 // @ is an alias to '/src'
 
-
 export default {
     name: 'HomeView',
     components: {}
@@ -37,7 +36,7 @@ h1 {
     img {
         border: 2px solid #566573;
         border-radius: 50%;
-        height: 40vh;
+        height: 30vh;
         margin-top: 2rem;
     }
 }

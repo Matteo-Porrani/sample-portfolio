@@ -2,7 +2,6 @@
     <div class="card">
         <div class="card-header">
             <h2>{{ project.title }}</h2>
-
             <i :class="project.icon"></i>
         </div>
 
@@ -11,16 +10,15 @@
         <div class="card-footer">
             <project-link :id="project.id"></project-link>
         </div>
-
     </div>
 </template>
 
 <script>
 import ProjectLink from "@/UI/ProjectLink";
+
 export default {
     name: "ProjectItem",
     components: {ProjectLink},
-
     props: ['project'],
 }
 </script>
@@ -46,11 +44,14 @@ export default {
         text-align: center;
         margin-top: 5rem;
     }
-
 }
 
 i {
     font-size: 3rem;
     margin-block: 1rem;
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 25px;
 }
+
 </style>

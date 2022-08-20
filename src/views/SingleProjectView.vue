@@ -1,5 +1,4 @@
 <template>
-
     <div class="project-header-wrapper">
         <h1>
             #{{ this.$route.params.id }}
@@ -7,11 +6,7 @@
             {{ projectData.title }}
         </h1>
     </div>
-
     <div class="container">
-
-
-
         <div class="project-body-wrapper">
             <div class="description">
                 <p>{{ projectData.desc }}</p>
@@ -70,7 +65,5 @@ export default {
         align-items: center;
         font-size: 5rem;
     }
-
 }
-
 </style>
