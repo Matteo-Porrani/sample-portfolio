@@ -6,22 +6,20 @@
             <i :class="project.icon"></i>
         </div>
 
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus animi dolores facilis laboriosam
-            necessitatibus quae quam quas quo quos, repellendus sequi tempora tenetur totam vel vero! Ad doloremque et
-            perferendis.</p>
-
+        <p>{{ project.desc }}</p>
 
         <div class="card-footer">
-            <base-button>See more</base-button>
+            <project-link :id="project.id"></project-link>
         </div>
 
     </div>
 </template>
 
 <script>
+import ProjectLink from "@/UI/ProjectLink";
 export default {
     name: "ProjectItem",
-    components: {},
+    components: {ProjectLink},
 
     props: ['project'],
 }
@@ -30,13 +28,14 @@ export default {
 <style lang="scss" scoped>
 .card {
     background-color: #f2f4f6;
-    padding: 1.5rem;
+    padding: 3rem 1.5rem;
     transition: all .2s ease-out;
+    width: 100%;
 
-    &:hover {
-        background-color: #566573;
-        color: #f2f4f6;
-    }
+    //&:hover {
+    //    background-color: #566573;
+    //    color: #f2f4f6;
+    //}
 
     &-header {
         text-align: center;
@@ -45,7 +44,7 @@ export default {
 
     &-footer {
         text-align: center;
-        margin-top: 2rem;
+        margin-top: 5rem;
     }
 
 }

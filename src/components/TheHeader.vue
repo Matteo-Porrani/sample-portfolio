@@ -35,6 +35,12 @@ nav {
     a:visited {
         color: inherit;
         text-decoration: none;
+        padding-bottom: 4px;
+        border-bottom: 2px solid transparent;
+
+        &:hover {
+            border-color: #f2f4f6;
+        }
 
         &.router-link-exact-active {
             color: #f4d03f;

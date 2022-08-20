@@ -1,6 +1,11 @@
 <template>
     <div class="home">
         <div class="container">
+
+            <div class="img-wrapper">
+                <img src="../assets/me.jpg" alt="">
+            </div>
+
             <h1 class="hero-title">Hi, I'm Adam.<br>I love to make websites!</h1>
             <p>
                 <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt dolores eveniet facilis libero, quia saepe sed voluptate. Aliquid autem blanditiis commodi, delectus eaque, nesciunt nihil obcaecati quis repellendus sed ullam?</span>
@@ -22,7 +27,19 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-    h1 {
-        text-align: left;
+h1 {
+    text-align: left;
+}
+
+.img-wrapper {
+    text-align: center;
+
+    img {
+        border: 2px solid #566573;
+        border-radius: 50%;
+        height: 40vh;
+        margin-top: 2rem;
     }
+}
+
 </style>

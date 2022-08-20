@@ -23,6 +23,7 @@ export default {
 
 body {
     margin: 0;
+    font-size: 1.125rem;
     line-height: 1.5;
 }
 
@@ -33,8 +34,13 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Hepta Slab', serif;
+    color: #273746;
 }
 
+ i {
+     //color: #273746;
+     color: #3498db;
+ }
 
 .container {
     max-width: 980px;
@@ -43,7 +49,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .hero-title {
     text-align: center;
-    margin-block: 3rem 6rem;
+    margin-block: 2rem 5rem;
 }
 
 </style>

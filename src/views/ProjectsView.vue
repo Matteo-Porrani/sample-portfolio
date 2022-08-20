@@ -1,7 +1,7 @@
 <template>
     <div class="about">
         <div class="container">
-            <h1 class="hero-title">Have a look at my projects</h1>
+            <h1 class="hero-title">This is what I made... have a look!</h1>
         </div>
 
         <div class="container">
@@ -13,6 +13,7 @@
 </template>
 
 <script>
+import projects from '../projects.js';
 import ProjectItem from "@/components/ProjectItem";
 
 export default {
@@ -22,26 +23,12 @@ export default {
     },
     data() {
         return {
-            projects: [
-                {
-                    id: 1,
-                    title: 'Sprinkle',
-                    icon: 'fas fa-flag-checkered',
-                    desc: "Wait, there's something dead ahead on the scanner. It looks like our droid...hit the accelerator. Hey, whoa, just where do you think you're going? Master Luke here is your rightful owner. We'll have no more of this Obi-Wan Kenobi jibberish...and don't talk to me about your mission, either.",
-                },
-                {
-                    id: 2,
-                    title: 'Magic Maker',
-                    icon: 'fas fa-drafting-compass',
-                    desc: "This will begin to make things right. I've traveled too far, and seen too much, to ignore the despair in the galaxy. Without the Jedi, there can be no balance in the Force. Well, because of you now we have a chance.",
-                },
-                {
-                    id: 3,
-                    title: "Zharg Game",
-                    icon: 'fas fa-rocket',
-                    desc: "Don't blame me. I'm an interpreter. I'm not supposed to know a power socket from a computer terminal. What are you talking about? We're not interested in the hyperdrive on the Millennium Falcon. Just hang on. We're almost there."
-                },
-            ],
+            projects: projects,
+        }
+    },
+    provide() {
+        return {
+            projects: this.projects,
         }
     }
 }
@@ -50,6 +37,7 @@ export default {
 <style lang="scss" scoped>
 .showcase {
     display: flex;
+    align-items: start;
     gap: 1rem;
 }
 </style>
