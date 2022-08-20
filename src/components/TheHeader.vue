@@ -21,7 +21,7 @@ export default {
 header {
     //background-color: #2471a3;
     background-color: #3498db;
-    border-bottom: 20px solid #d6dbdf;
+    border-bottom: 20px solid #f2f4f6;
     color: #f8f9fa;
     padding: 2rem;
 }
@@ -39,6 +39,8 @@ nav {
         &.router-link-exact-active {
             color: #f4d03f;
             font-weight: bold;
+            padding-bottom: 4px;
+            border-bottom: 2px solid #f4d03f;
         }
     }
 }

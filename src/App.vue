@@ -8,7 +8,7 @@ import TheHeader from '@/components/TheHeader.vue';
 
 export default {
     components: {
-        TheHeader,
+        TheHeader
     }
 }
 </script>
@@ -43,6 +43,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .hero-title {
     text-align: center;
+    margin-block: 3rem 6rem;
 }
 
 </style>

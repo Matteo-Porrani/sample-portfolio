@@ -1,7 +1,7 @@
 <template>
     <div class="home">
         <div class="container">
-            <h1 class="hero-title">Hi, I'm Adam.<br>Welcome to my portfolio!</h1>
+            <h1 class="hero-title">Hi, I'm Adam.<br>I love to make websites!</h1>
             <p>
                 <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt dolores eveniet facilis libero, quia saepe sed voluptate. Aliquid autem blanditiis commodi, delectus eaque, nesciunt nihil obcaecati quis repellendus sed ullam?</span>
                 <span>Autem facilis incidunt, magni minima neque numquam optio ut! A alias at, cumque deleniti hic nihil nostrum odit perferendis possimus, qui, rem repudiandae similique veritatis! Accusamus adipisci natus omnis vitae.</span>
@@ -23,6 +23,6 @@ export default {
 
 <style lang="scss" scoped>
     h1 {
-        margin-block: 3rem 6rem;
+        text-align: left;
     }
 </style>
