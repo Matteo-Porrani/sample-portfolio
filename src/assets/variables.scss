@@ -1,0 +1,31 @@
+$primary: #769bf2;
+$accent: #15ca82;
+$danger: #d04;
+$soft: #f0f2f5;
+
+//$font-family-sans-serif: 'Roboto';
+$font-family-sans-serif: 'Rubik';
+//$font-weight-base: 300;
+
+$headings-font-family: 'Red Hat Display';
+$headings-font-weight: 800;
+
+
+
+
+// LearnVue
+.text-gradient {
+    -webkit-text-fill-color: transparent;
+    background: -webkit-linear-gradient(30deg,#769bf2,#15ca82);
+    -webkit-background-clip: text;
+    display: inline-block;
+    position: relative;
+}
+
+// Vite
+:root {
+    --vp-home-hero-name-color: transparent;
+    --vp-home-hero-name-background: -webkit-linear-gradient( 120deg, #bd34fe 30%, #41d1ff );
+    --vp-home-hero-image-background-image: linear-gradient( -45deg, #bd34fe 50%, #47caff 50% );
+    --vp-home-hero-image-filter: blur(40px);
+}

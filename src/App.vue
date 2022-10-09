@@ -1,55 +1,46 @@
 <template>
-    <the-header></the-header>
-    <router-view></router-view>
+  <TheHeader/>
+
+  <router-view v-slot="slotProps">
+    <transition name="route" mode="out-in">
+      <component :is="slotProps.Component"></component>
+    </transition>
+  </router-view>
+
+  <TheFooter/>
 </template>
 
-<script>
-import TheHeader from '@/components/TheHeader.vue';
-
-export default {
-    components: {
-        TheHeader
-    }
-}
+<script setup>
+import TheHeader from '@/components/layout/TheHeader';
+import TheFooter from "@/components/layout/TheFooter";
 </script>
 
 <style lang="scss">
-
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
-
-body {
-    margin: 0;
-    font-size: 1.125rem;
-    line-height: 1.5;
-}
+@import './assets/main.scss';
 
 #app {
-    font-family: 'Roboto', sans-serif;
-    color: #566573;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Hepta Slab', serif;
-    color: #273746;
+
+
+.route-enter-from,
+.route-leave-to {
+  opacity: 0;
+  transform: translateY(12px);
 }
 
- i {
-     //color: #273746;
-     color: #3498db;
- }
-
-.container {
-    max-width: 980px;
-    margin: 0 auto;
+.route-enter-to,
+.route-leave-from {
+  opacity: 1;
+  transform: translateY(0px);
 }
 
-.hero-title {
-    text-align: center;
-    margin-block: 2rem 5rem;
+.route-enter-active,
+.route-leave-active {
+  transition: all .4s ease-in-out;
 }
 
 </style>
