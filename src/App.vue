@@ -7,21 +7,20 @@
     </transition>
   </router-view>
 
-  <TheFooter/>
 </template>
 
 <script setup>
 import TheHeader from '@/components/layout/TheHeader';
-import TheFooter from "@/components/layout/TheFooter";
+
 </script>
 
 <style lang="scss">
 @import './assets/main.scss';
 
 #app {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+  //display: flex;
+  //flex-direction: column;
+  //min-height: 100vh;
 }
 
 

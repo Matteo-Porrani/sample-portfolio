@@ -11,6 +11,6 @@
 
 <style lang="scss" scoped>
 .intro {
-  height: 50vh;
+  min-height: 50vh;
 }
 </style>

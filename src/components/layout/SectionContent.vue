@@ -1,15 +1,19 @@
 <template>
   <transition name="content">
-    <section v-if="contentIsVisible" class="content">
-      <div class="container">
-        <slot></slot>
-      </div>
-    </section>
+    <div v-if="contentIsVisible">
+
+      <slot></slot>
+
+      <TheFooter/>
+
+    </div>
   </transition>
 </template>
 
 <script setup>
 import {ref} from 'vue';
+
+import TheFooter from "@/components/layout/TheFooter";
 
 const contentIsVisible = ref(false);
 setTimeout(() => {
