@@ -56,7 +56,7 @@
                 <i class="fas fa-arrow-right text-white ms-2"></i>
               </a>
 
-              <p class="my-5">
+              <p class="my-5 text-secondary">
                 <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad alias dignissimos dolor dolorem dolorum earum enim est incidunt magni maiores mollitia nostrum, pariatur, perferendis recusandae rem rerum saepe sunt vero.</span>
                 <br>
                 <br>
@@ -132,10 +132,11 @@ const project = projects.find(p => p.id === props.id);
 }
 
 .img-preview {
-  margin-top: -20vh !important;
+  margin-top: -10vh !important;
   width: 90vw;
 
   @media (min-width: 768px) {
+    margin-top: -20vh !important;
     width: 60vw;
   }
 
