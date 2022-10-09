@@ -49,8 +49,12 @@ header {
     content: '';
     clip-path: polygon(0 0, 100% 0, 100% 65%, 0% 100%);
     width: 100%;
-    height: 50vh;
     z-index: -1;
+    height: 65vh;
+
+    @media (min-width: 768px) {
+      height: 60vh;
+    }
   }
 
   &.header-home:after {

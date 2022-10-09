@@ -119,5 +119,19 @@ b {
   background: $soft;
   background: linear-gradient(0deg, $soft 65%, $light 92%);
 }
+
+a {
+
+  .fas {
+    transform: translateX(-4px);
+  }
+
+  &:hover .fas {
+    transition: all .3s ease-out;
+    transform: translateX(4px);
+    //margin-left: 12px !important;
+  }
+}
+
 </style>
 

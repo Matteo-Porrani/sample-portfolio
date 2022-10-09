@@ -30,13 +30,18 @@ defineProps({
 </script>
 
 <style lang="scss" scoped>
+@import '../assets/variables.scss';
+
 article {
   width: 90%;
   margin-top: 2rem;
+  border: 4px solid;
+  border-color: transparent;
 
   &:hover {
     transition: all .3s ease-out;
     transform: scale(1.02);
+    border-color: $primary;
   }
 
   @media(min-width: 768px) {

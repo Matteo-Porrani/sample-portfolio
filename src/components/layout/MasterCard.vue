@@ -1,6 +1,6 @@
 <template>
 <div class="master-card row">
-  <div class="col-10 col-md-6 rounded-3 bg-white shadow p-3 p-md-5 mx-auto">
+  <div class="col-10 col-md-6 rounded-3 bg-white shadow px-3 py-4 p-md-5 mx-auto">
     <slot></slot>
   </div>
 </div>
