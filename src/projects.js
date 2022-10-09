@@ -2,32 +2,37 @@ const projects = [
     {
         id: 1,
         title: '4Store',
-        icon: 'fas fa-flag-checkered',
-        desc: "Wait, there's something dead ahead on the scanner. It looks like our droid... Hey, what do you think? Master Luke here is your rightful owner. We'll have no more of this Obi-Wan Kenobi.",
+        icon: 'fas fa-store',
+        desc: "Site démo pour une boutique de vêtements en ligne",
+        preview: 'preview-store-multi.png',
     },
     {
         id: 2,
         title: 'MGP Battle',
         icon: 'fas fa-flag-checkered',
-        desc: "This will begin to make things right. I've traveled too far, and seen too much, to ignore the despair in the galaxy. Without the Jedi, there can be no balance in the Force.",
+        desc: "Application web de pronostics sportifs pour grand prix moto",
+        preview: 'preview-battle.png',
     },
     {
         id: 3,
         title: "Penta",
-        icon: 'fas fa-search',
-        desc: "I'm not supposed to know a power socket from a computer terminal. What are you talking about? We're not interested in the hyperdrive on the Millennium Falcon."
+        icon: 'fas fa-dice-d6',
+        desc: "Entre vous et la victoire seulement cinq petites lettres",
+        preview: 'preview-battle.png',
     },
     {
         id: 4,
         title: 'le Tour du Monde',
         icon: 'fas fa-globe-americas',
-        desc: "This will begin to make things right. I've traveled too far, and seen too much, to ignore the despair in the galaxy. Without the Jedi, there can be no balance in the Force.",
+        desc: "Mini site pour passionnés de géographie",
+        preview: 'preview-tour.png',
     },
     {
         id: 5,
         title: "Argonautes 3.0",
         icon: 'fas fa-skull-crossbones',
-        desc: "I'm not supposed to know a power socket from a computer terminal. What are you talking about? We're not interested in the hyperdrive on the Millennium Falcon."
+        desc: "Implémentation de CRUD sur fond de quête épique",
+        preview: 'preview-argo.png',
     },
 ];
 

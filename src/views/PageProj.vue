@@ -1,55 +1,108 @@
 <template>
   <div class="page page-project">
-    <div class="container">
 
+    <SectionIntro>
 
-      <div class="row my-5">
+      <div class="row my-3">
         <div class="col">
-          <!--              <p class="text-center text-secondary">#{{ id }}</p>-->
-          <h1 class="text-center text-white">{{ project.title }}</h1>
+          <h1 class="text-center text-white fs-2">{{ project.title }}</h1>
         </div>
-
       </div>
 
-
-      <div class="row my-5">
+      <div class="row my-3">
         <div class="col">
           <div class="icon-wrapper position-relative mx-auto rounded rounded-pill overflow-hidden">
             <img class="position-absolute top-50 start-50 translate-middle" src="../assets/sketch1.svg" alt="">
-
-            <i :class="project.icon" class="fa-5x position-absolute top-50 start-50"></i>
-            <i :class="project.icon" class="fa-5x position-absolute top-50 start-50 text-white translate-middle"></i>
-
-
-<!--            <i class="fas fa-skull-crossbones fa-5x position-absolute top-50 start-50 text-white"></i>-->
-<!--            <i class="fas fa-skull-crossbones fa-5x position-absolute top-50 start-50 translate-middle"></i>-->
-
-
-<!--            <i class="fas fa-walking fa-5x position-absolute top-50 start-50 text-white"></i>-->
-<!--            <i class="fas fa-walking fa-5x position-absolute top-50 start-50 translate-middle"></i>-->
+            <i :class="project.icon" class="fa-4x position-absolute top-50 start-50"></i>
+            <i :class="project.icon" class="fa-4x position-absolute top-50 start-50 text-white translate-middle"></i>
           </div>
-
         </div>
       </div>
 
+      <div class="row">
+        <div class="col">
+          <p class="text-white text-center fs-5 mt-3">{{ project.desc }}</p>
+        </div>
+      </div>
 
-      <!--      <div class="row my-5">-->
-      <!--        <div class="col-6 mx-auto">-->
-
-      <!--          <p class="fs-5 text-center text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing officiis sint-->
-      <!--            temporibus tenetur ullam.-->
-      <!--            At debitis dolorem doloribus.</p>-->
-
-      <!--          <button @click="router.back()" class="btn btn-accent text-white d-block mx-auto">Go Back</button>-->
-      <!--        </div>-->
-      <!--      </div>-->
+    </SectionIntro>
 
 
-    </div>
+    <SectionContent>
+
+      <section class="my-5">
+        <div class="content">
+          <div class="row">
+            <div class="col text-center">
+
+<!--              <img class="img-preview w-50" src="../assets/images/preview-tour.png" alt="">-->
+              <img class="img-preview" :src="require('@/assets/images/' + project.preview)" alt="">
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+      <section class="my-5">
+        <div class="container">
+
+          <div class="row">
+            <div class="col-12 col-md-8 mx-auto px-3">
+
+              <a href="" class="d-block btn btn-accent text-light w-fit-content mx-auto">
+                Voir le site
+                <i class="fas fa-arrow-right text-white ms-2"></i>
+              </a>
+
+              <p class="my-5">
+                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad alias dignissimos dolor dolorem dolorum earum enim est incidunt magni maiores mollitia nostrum, pariatur, perferendis recusandae rem rerum saepe sunt vero.</span>
+                <br>
+                <br>
+                <span>Ab accusantium expedita fugit minus odit quaerat unde voluptates! Ad architecto consequatur debitis dolor exercitationem expedita harum inventore labore, laboriosam, nam natus nisi qui rem sapiente, similique temporibus totam voluptas.</span><span>Ad atque eveniet labore molestias non, quisquam reiciendis ut. Adipisci eligendi error nisi nobis optio quisquam rem repellendus rerum sunt tempore! Ad dolores ea earum, fugit impedit suscipit ullam vel.</span>
+                <br>
+                <br>
+                <span>A aliquid aperiam assumenda consectetur dolore eaque eligendi, facilis itaque labore placeat possimus, quia quod repellendus? Accusantium beatae eius eligendi inventore ipsum laborum molestiae molestias officia saepe tenetur. Debitis, odio.</span>
+              </p>
+
+
+              <router-link to="/" class="d-block btn btn-deep text-light w-fit-content mx-auto">
+                <i class="fas fa-arrow-left text-white ms-2"></i>
+                Retour aux projets
+              </router-link>
+
+
+<!--              <router-link :to="{ name: 'project', params: { id: p.id } }"-->
+<!--                           class="btn btn-accent text-white d-block mx-auto mt-4" style="width: fit-content">-->
+<!--                Voir projet-->
+<!--                <i class="fas fa-arrow-right text-white ms-2"></i>-->
+<!--              </router-link>-->
+
+            </div>
+          </div>
+
+
+
+        </div>
+      </section>
+
+
+
+
+    </SectionContent>
+
+
+
+
+
+
+    <!--          <button @click="router.back()" class="btn btn-accent text-white d-block mx-auto">Go Back</button>-->
   </div>
 </template>
 
 <script setup>
+// import {computed} from 'vue'
 // import {useRouter} from 'vue-router'
 import projects from '../projects';
 
@@ -61,17 +114,33 @@ const props = defineProps({
 
 const project = projects.find(p => p.id === props.id);
 
+// const previewPath = computed(() => '/img/' + project.preview);
+
 </script>
 
 
 <style lang="scss" scoped>
+
 .icon-wrapper {
-  width: 140px;
-  height: 140px;
+  width: 120px;
+  height: 120px;
 
   i:first-of-type {
     transform: translate(-46%, -46%);
   }
 
+}
+
+.img-preview {
+  margin-top: -20vh !important;
+  width: 90vw;
+
+  @media (min-width: 768px) {
+    width: 60vw;
+  }
+
+  @media (min-width: 960px) {
+    width: 45vw;
+  }
 }
 </style>

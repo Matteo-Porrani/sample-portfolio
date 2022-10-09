@@ -15,7 +15,8 @@
 // Create your own map
 $custom-colors: (
         "accent": $accent,
-        "soft": $soft
+        "deep": $deep,
+        "soft": $soft,
 );
 
 // 4. Include any default map overrides here
@@ -48,3 +49,8 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 .cursor-pointer {
     cursor: pointer;
 }
+
+.w-fit-content {
+    width: fit-content;
+}
+

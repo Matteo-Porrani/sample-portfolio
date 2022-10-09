@@ -7,11 +7,11 @@
           }"
   >
     <div class="container">
-      <nav class="d-flex align-items-center gap-5">
+      <nav class="d-flex align-items-center justify-content-between gap-5">
         <router-link to="/">
           <img height="46" src="../../assets/fake-logo.svg" alt="home-logo">
         </router-link>
-        <router-link class="link-light text-decoration-none" to="/about">About</router-link>
+        <router-link class="link-light text-decoration-none" to="/about">À propos</router-link>
       </nav>
     </div>
   </header>
@@ -47,7 +47,7 @@ header {
     position: absolute;
     top: 100%;
     content: '';
-    clip-path: polygon(0 0, 100% 0, 100% 70%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 65%, 0% 100%);
     width: 100%;
     height: 50vh;
     z-index: -1;
@@ -62,7 +62,7 @@ header {
   }
 
   &.header-project:after {
-    background-color: #212529;
+    background-color: $deep;
   }
 
 }
