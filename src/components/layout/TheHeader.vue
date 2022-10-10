@@ -9,11 +9,14 @@
     <div class="container">
 
       <nav class="d-flex align-items-center justify-content-between gap-5">
-        <router-link to="/">
+        <router-link to="/" class="text-decoration-none">
           <img height="46" src="../../assets/fake-logo.svg" alt="home-logo">
+          <span class="logo-text res-fs-10 fw-bold text-light d-inline-block">MP</span>
         </router-link>
-        <router-link class="link-light text-decoration-none" to="/#showcase">Projets</router-link>
-        <router-link class="link-light text-decoration-none" to="/about">À propos</router-link>
+
+        <router-link class="res-fs-4 res-fs-md-5 link-light text-decoration-none" to="/#showcase">Projets</router-link>
+        <router-link class="res-fs-4 res-fs-md-5 link-light text-decoration-none" to="/#contact">Contact</router-link>
+        <router-link class="res-fs-4 res-fs-md-5 link-light text-decoration-none" to="/about">À propos</router-link>
       </nav>
 
     </div>
@@ -64,6 +67,10 @@ header {
 
   &.header-project:after {
     background-color: $deep;
+  }
+
+  .logo-text {
+    transform: translate(0, 6px);
   }
 
 }

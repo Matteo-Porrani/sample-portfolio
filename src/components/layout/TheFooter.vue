@@ -1,9 +1,9 @@
 <template>
-  <footer class="bg-dark text-white pt-3 pb-5 mt-auto">
+  <footer class="bg-deep text-white pt-3 pb-5 mt-auto">
     <div class="container">
       <div class="row">
         <div class="col text-center">
-          <p>Matteo Porrani &copy; 2022</p>
+          <p>MP &copy; 2022</p>
         </div>
       </div>
     </div>

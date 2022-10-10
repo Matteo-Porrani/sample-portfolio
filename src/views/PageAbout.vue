@@ -20,25 +20,20 @@
           <MasterCard>
 
             <div class="row">
-              <div class="col lh-lg">
+              <div class="col lh-lg text-center text-md-start">
                 <p>
                   Ayant un fort attrait pour l’univers numérique et la programmation, j’ai commencé en 2018 à me former en autodidacte aux fondamentaux du web, notamment HTML et CSS.
                 </p>
-
-                <!--            <p>-->
-                <!--              Deux ans plus tard, j’ai décidé de me reconvertir en intégrant fin 2020 la formation <b>Développeur Web & Web Mobile</b> au sein de l'école <b>La Passerelle</b> (Paris 19e) afin de poursuivre mon apprentissage avec JavaScript, NodeJS, React, PHP, Symfony et MySQL / phpMyAdmin.-->
-                <!--            </p>-->
-
                 <p>
                   Deux ans plus tard, j’ai décidé de me reconvertir en intégrant la formation <b>Développeur Web & Web Mobile</b> au sein de l'école <b>La Passerelle</b> (Paris 19e), une formation bootcamp de 5 mois axée sur JavaScript, NodeJS, React, PHP, Symfony et MySQL / phpMyAdmin.
                 </p>
 
                 <p>
-                  Par la suite, j’ai continué à approfondir les différents langages et frameworks par la pratique, à travers des <b>projets personnels</b> et grâce à différentes <b>ressources complémentaires en ligne</b> (Vue School, Udemy, Frontend Mentor, freeCodeCamp.org).
+                  Par la suite, j’ai continué à approfondir les différents langages et frameworks par la pratique, à travers des projets personnels et grâce à différentes ressources complémentaires en ligne (Vue School, Udemy, Frontend Mentor, freeCodeCamp.org).
                 </p>
 
                 <p>
-                  Depuis mai 2022 je suis en stage chez <b>Ticketac.com</b>, où je continue à me perfectionner en VueJS et Symfony.
+                  Depuis mai 2022 je suis en stage chez <b>Ticketac.com</b>, où je continue à me perfectionner en <b>VueJS</b> et <b>Symfony</b>.
                 </p>
               </div>
             </div>

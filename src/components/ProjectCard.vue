@@ -35,13 +35,13 @@ defineProps({
 article {
   width: 90%;
   margin-top: 2rem;
-  border: 4px solid;
+  border: 3px solid;
   border-color: transparent;
 
   &:hover {
     transition: all .3s ease-out;
-    transform: scale(1.02);
-    border-color: $primary;
+    border-color: $accent;
+    //transform: scale(1.02);
   }
 
   @media(min-width: 768px) {

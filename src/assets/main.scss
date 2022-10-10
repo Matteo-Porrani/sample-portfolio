@@ -54,3 +54,19 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
     width: fit-content;
 }
 
+/*****************************************\
+UTILITY FONT-SIZE CLASSES
+\*****************************************/
+
+@each $font-key, $font-size in $custom-font-sizes {
+    .res-fs-#{$font-key} {
+        font-size: $font-size !important;
+    }
+
+    @include media-breakpoint-up(md) {
+        .res-fs-md-#{$font-key} {
+            font-size: $font-size !important;
+        }
+    }
+}
+
