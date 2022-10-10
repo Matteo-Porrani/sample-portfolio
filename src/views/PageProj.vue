@@ -31,19 +31,16 @@
     <SectionContent>
 
       <section class="my-5">
-        <div class="content">
+        <div class="container">
           <div class="row">
             <div class="col text-center">
 
-<!--              <img class="img-preview w-50" src="../assets/images/preview-tour.png" alt="">-->
               <img class="img-preview" :src="require('@/assets/images/' + project.preview)" alt="">
 
             </div>
           </div>
         </div>
       </section>
-
-
 
       <section class="my-5">
         <div class="container">

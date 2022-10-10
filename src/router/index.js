@@ -1,4 +1,4 @@
-import {createRouter, createWebHistory} from 'vue-router';
+import {createRouter, createWebHashHistory} from 'vue-router';
 import PageHome from '../views/PageHome.vue';
 
 // import projects from "@/projects";
@@ -9,29 +9,6 @@ const routes = [
         name: 'home',
         component: PageHome
     },
-    // {
-        // path: '/project/:id',
-        // name: 'project',
-        // component: () => import(/* webpackChunkName: "project" */ '../views/PageProject.vue'),
-        // 1. 'props' key can simply be a boolean...
-        // props: true,
-
-        // 2. ...or use a function that gets the route as argument
-        // props: route => ({id: parseInt(route.params.id), newsletterPopup: true}),
-
-        // using a route gard
-        // beforeRouteEnter(to) {
-        //     const exists = projects.find(p => p.id === parseInt(to.params.id))
-        //     if (!exists) return {
-        //         name: 'NotFound',
-        //         // allows keeping the URL while rendering a different page
-        //         params: { pathMatch: to.path.split('/').slice(1) },
-        //         query: to.query,
-        //         hash: to.hash,
-        //     }
-        // }
-
-    // },
     {
         path: '/project/:id',
         name: 'project',
@@ -51,12 +28,43 @@ const routes = [
     //     path: '/:pathMatch(.*)*',
     //     name: 'NotFound',
     //     component: () => import('../views/PageNotFound.vue'),
+    // },
+
+    // {
+    // path: '/project/:id',
+    // name: 'project',
+    // component: () => import(/* webpackChunkName: "project" */ '../views/PageProject.vue'),
+    // 1. 'props' key can simply be a boolean...
+    // props: true,
+
+    // 2. ...or use a function that gets the route as argument
+    // props: route => ({id: parseInt(route.params.id), newsletterPopup: true}),
+
+    // using a route gard
+    // beforeRouteEnter(to) {
+    //     const exists = projects.find(p => p.id === parseInt(to.params.id))
+    //     if (!exists) return {
+    //         name: 'NotFound',
+    //         // allows keeping the URL while rendering a different page
+    //         params: { pathMatch: to.path.split('/').slice(1) },
+    //         query: to.query,
+    //         hash: to.hash,
+    //     }
     // }
+
+    // },
+
 ]
 
 const router = createRouter({
-    history: createWebHistory(process.env.BASE_URL),
-    routes
+    history: createWebHashHistory(process.env.BASE_URL),
+    routes,
+    scrollBehavior(to) {
+        return {
+            el: to.hash,
+            behavior: 'smooth',
+        }
+    }
 })
 
 export default router
