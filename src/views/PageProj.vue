@@ -1,7 +1,7 @@
 <template>
   <div class="page page-project">
 
-    <SectionIntro>
+    <SectionIntro v-if="project">
 
       <div class="row my-4 my-md-5">
         <div class="col">
@@ -14,7 +14,8 @@
           <div class="icon-wrapper position-relative mx-auto rounded rounded-pill overflow-hidden">
             <img class="position-absolute top-50 start-50 translate-middle" src="../assets/sketch1.svg" alt="">
             <i :class="project.icon" class="res-fs-18 res-fs-md-24 position-absolute top-50 start-50 text-deep"></i>
-            <i :class="project.icon" class="res-fs-18 res-fs-md-24 position-absolute top-50 start-50 text-white translate-middle"></i>
+            <i :class="project.icon"
+               class="res-fs-18 res-fs-md-24 position-absolute top-50 start-50 text-white translate-middle"></i>
           </div>
         </div>
       </div>
@@ -28,7 +29,7 @@
     </SectionIntro>
 
 
-    <SectionContent>
+    <SectionContent v-if="project">
 
       <section class="my-5">
         <div class="container">
@@ -63,6 +64,12 @@
                 <span>A aliquid aperiam assumenda consectetur dolore eaque eligendi, facilis itaque labore placeat possimus, quia quod repellendus? Accusantium beatae eius eligendi inventore ipsum laborum molestiae molestias officia saepe tenetur. Debitis, odio.</span>
               </p>
 
+              <router-link v-if="project.id < 5" :to="{ name: 'project', params: { id: nextProjectId } }"
+                           class="btn btn-accent text-white d-block mx-auto mt-4" style="width: fit-content">
+                Projet suivant
+                <i class="fas fa-arrow-right text-white ms-2"></i>
+              </router-link>
+
               <router-link to="/" class="d-block btn btn-deep text-light w-fit-content mx-auto mt-4">
                 <i class="fas fa-arrow-left text-white ms-2"></i>
                 Retour aux projets
@@ -72,18 +79,11 @@
           </div>
 
 
-
         </div>
       </section>
 
 
-
-
     </SectionContent>
-
-
-
-
 
 
     <!--          <button @click="router.back()" class="btn btn-accent text-white d-block mx-auto">Go Back</button>-->
@@ -91,21 +91,41 @@
 </template>
 
 <script setup>
-// import {computed} from 'vue'
-// import {useRouter} from 'vue-router'
-import projects from '../projects';
+import projects from "@/projects";
 
+import {computed, watch} from 'vue'
+// import {useRouter} from 'vue-router'
 // const router = useRouter();
+
+import {useRoute} from 'vue-router'
+const route = useRoute();
+
+// const projectId = computed(route.params.id);
+// console.log(projectId);
+
+let project = computed({
+  id: null,
+  title: null,
+  icon: null,
+  desc: null,
+  preview: null,
+});
+
+watch(() => route, (newVal) => {
+    project = projects.find(p => p.id == newVal.params.id);
+  },
+  {
+    immediate: true
+  });
 
 const props = defineProps({
   id: {type: Number, required: true},
 });
 
-const project = projects.find(p => p.id === props.id);
+// project = projects.find(p => p.id === props.id);
 
-// const nextProjectHref = computed(() => `/project/${props.id + 1}`);
 
-// const previewPath = computed(() => '/img/' + project.preview);
+const nextProjectId = parseInt(props.id) + 1;
 
 </script>
 
@@ -141,3 +161,5 @@ const project = projects.find(p => p.id === props.id);
   }
 }
 </style>
+
+

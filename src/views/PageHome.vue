@@ -9,7 +9,7 @@
         <div class="col-10 col-md-9 order-1 order-md-0 text-center text-md-start">
           <h1 class="res-fs-16 res-fs-md-18">Matteo Porrani</h1>
           <h2 class="text-white fw-semibold">Développeur Web</h2>
-          <p class="res-fs-6 res-fs-md-7 mt-5 pe-md-5">
+          <p class="res-fs-5 res-fs-md-6 mt-5 pe-md-5">
             Après une formation dev web fullstack à <b>La Passerelle</b>,
             <br>j’ai commencé à expérimenter avec les différents langages et frameworks à travers des projets
             personnels.
@@ -61,6 +61,7 @@
                 <template v-slot:project-card-description>{{ p.desc }}</template>
 
                 <template v-slot:project-card-link>
+
                   <router-link :to="{ name: 'project', params: { id: p.id } }"
                                class="btn btn-accent text-white d-block mx-auto mt-4" style="width: fit-content">
                     Voir <span class="d-none d-md-inline">le projet</span>
