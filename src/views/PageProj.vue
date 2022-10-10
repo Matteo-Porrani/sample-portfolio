@@ -49,9 +49,9 @@
           <div class="row">
             <div class="col-12 col-md-8 mx-auto px-3">
 
-              <a href="" class="d-block btn btn-accent text-light w-fit-content mx-auto">
+              <a :href="project.href" target="_blank" class="d-block btn btn-accent text-light w-fit-content mx-auto">
                 Voir le site
-                <i class="fas fa-arrow-right text-white ms-2"></i>
+                <i class="fas fa-external-link-alt text-white ms-2"></i>
               </a>
 
               <p class="my-5 text-secondary">
