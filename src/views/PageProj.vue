@@ -49,7 +49,7 @@
           <div class="row">
             <div class="col-12 col-md-8 mx-auto px-3">
 
-              <a :href="project.href" target="_blank" class="d-block btn btn-accent text-light w-fit-content mx-auto">
+              <a :href="project.href" target="_blank" class="d-block btn btn-accent text-light w-fit-content mx-auto" title="voir le site">
                 Voir le site
                 <i class="fas fa-external-link-alt text-white ms-2"></i>
               </a>
@@ -59,12 +59,12 @@
               </p>
 
               <router-link v-if="project.id < 5" :to="{ name: 'project', params: { id: nextProjectId } }"
-                           class="btn btn-accent text-white d-block mx-auto mt-4" style="width: fit-content">
+                           class="btn btn-accent text-white d-block w-fit-content mx-auto mt-4" title="projet suivant">
                 Projet suivant
                 <i class="fas fa-arrow-right text-white ms-2"></i>
               </router-link>
 
-              <router-link to="/#showcase" class="d-block btn btn-deep text-light w-fit-content mx-auto mt-4">
+              <router-link to="/#showcase" class="d-block btn btn-deep text-light w-fit-content mx-auto mt-4" title="retour aux projets">
                 <i class="fas fa-arrow-left text-white ms-2"></i>
                 Retour aux projets
               </router-link>

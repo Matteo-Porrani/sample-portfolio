@@ -25,13 +25,14 @@
         </router-link>
 
 
-        <a @click="toggleMenu" id="mobile-menu" class="position-relative">
+        <a @click="toggleMenu" id="mobile-menu" class="d-block d-md-none position-relative">
           <i v-if="!menuIsOpen" class="fas fa-bars text-light res-fs-14 me-1"></i>
 
           <i v-if="menuIsOpen" class="fas fa-times text-light res-fs-15 me-1"></i>
 
           <transition name="menu">
-            <div v-if="menuIsOpen" class="position-absolute bg-deep text-center rounded-3 end-0 p-3 mt-1" style="width: 60vw">
+            <div v-if="menuIsOpen" class="position-absolute bg-secondary shadow text-center rounded-3 end-0 p-3 mt-1"
+                 style="width: 60vw; z-index: 999;">
               <router-link class="d-block res-fs-7 link-light text-decoration-none" to="/#showcase">Projets
               </router-link>
               <router-link class="d-block res-fs-7 link-light text-decoration-none mt-4" to="/#contact">Contact

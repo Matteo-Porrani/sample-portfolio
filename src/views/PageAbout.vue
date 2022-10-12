@@ -38,7 +38,7 @@
               </div>
             </div>
 
-            <a href="/cv-porrani.pdf">Test</a>
+            <a href="/cv-porrani-22.pdf" title="télécharger mon CV" class="btn btn-accent text-light d-block w-fit-content mx-auto mt-5">Télécharger mon CV</a>
           </MasterCard>
 
         </div>
