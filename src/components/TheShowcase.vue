@@ -13,7 +13,7 @@
             en passant par un petit jeu mobile</p>
         </div>
       </div>
-      
+
       <div class="row">
         <div class="col d-flex flex-wrap justify-content-center align-items-start">
 

@@ -38,7 +38,7 @@
               </div>
             </div>
 
-            <button class="btn btn-accent text-white d-block mx-auto mt-5">Télécharger mon CV</button>
+            <a class="btn btn-accent text-white d-block w-fit-content mx-auto mt-5" href="../assets/pdf/cv-porrani.pdf" target="_blank" download rel="noopener noreferrer">Télécharger mon CV</a>
           </MasterCard>
 
         </div>

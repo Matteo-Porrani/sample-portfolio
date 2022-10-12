@@ -26,33 +26,34 @@ const resumes = [
   {
     id: 2,
     resume: `Étant passionné de compétitions moto, j'ai imaginé cette <strong>application web</strong> qui
-                  permet de disputer un championnat de pronostics entre amis. 
+                  permet de disputer un championnat de pronostics entre amis.
                   <br>
                   <br>
-                  Une page d'accueil présente les informations principales sur la prochaine course, avec le classique compte à rebours. 
+                  Une page d'accueil présente les informations principales sur la course à venir, avec le classique compte à rebours,  
+                  et la page <strong>calendrier</strong> permet de naviguer entre les résultats des différentes manches.
+                  <br>
+                  <br>
                   Chaque joueur dispose d'un <strong>espace personnel</strong> pour gérer ses pronostics, visualiser ses résultats et performances, 
                   et recevoir des notifications mail pour chaque action de jeu.
+                  <br>
                   <br>
                   L'<strong>interface d'administration</strong> permet au "directeur de course" de gérer les différentes phases de jeu, et
                   notamment de bloquer l'envoi des pronostics au début d'un grand prix, puis lancer le calcul des
                   points après chaque compétition (les scores sont basés sur le championnat MotoGP).
-                  <br>
-                  Une page <strong>calendrier</strong> affiche la liste des courses de la saison et permet de naviguer
-                  entre les résultats.
+   
                   <br>
                   <br>
                   Le back-end est écrit en <strong>PHP</strong> avec une base de données
                   <strong>MySQL</strong> et pour le front-end j'ai utilisé <strong>Bootstrap</strong>.
+                  <br>
+                  <br>
                   Le site est pour l'instant <strong>"mobile only"</strong>, étant conçu en priorité pour smartphone. 
                   <br>
-                  Il existe depuis juillet 2021, hébergé avec <strong>Alwaysdata</strong>, et compte une vingtaine d'utilisateurs réguliers.
-                  <br>
-                  <br>
-                  Je travaille actuellement sur l'ajout d'une nouvelle section <strong>statistiques</strong>.`,
+                  Il existe depuis juillet 2021, hébergé avec <strong>Alwaysdata</strong>, et compte une quinzaine d'utilisateurs réguliers.`,
   },
   {
     id: 3,
-    resume: `Ce jeu n'est pas une création originale, mais plutôt un clone de <strong><a class="text-decoration-none link-accent" href="https://joshcollinsworth.com/projects" target="_blank" title="Quina by Josh Collinsworth">Quina</a></strong>, créé par Josh Collinsworth.
+    resume: `Ce jeu n'est pas une création originale, mais plutôt un clone de <strong><a class="text-decoration-none link-accent" href="https://joshcollinsworth.com/projects" target="_blank" title="Quina by Josh Collinsworth">Quina <i class="fas fa-external-link-alt"></i></a></strong>, créé par Josh Collinsworth.
     <br><br>
     Je me suis inspiré de l'original américain pour construire une <strong>SPA (Single Page Application)</strong> en m'appuyant sur <strong>VueJS</strong> et en particulier sur deux briques fondamentales du framework, le <strong>Router</strong> pour la navigation et le tout nouveau store <strong>Pinia</strong>, qui permet de partager facilement les données reactives entre les composants.
     <br><br>
