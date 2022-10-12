@@ -8,4 +8,7 @@
 </script>
 
 <style lang="scss" scoped>
+img {
+  max-width: 280px;
+}
 </style>

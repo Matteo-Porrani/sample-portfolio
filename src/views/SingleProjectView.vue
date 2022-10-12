@@ -20,7 +20,7 @@
 </template>
 
 <script>
-import projects from '../projects.js';
+import projects from '@/data/projects.js';
 
 export default {
     name: "SingleProjectView",

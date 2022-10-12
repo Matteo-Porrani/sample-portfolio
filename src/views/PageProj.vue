@@ -3,7 +3,7 @@
 
     <SectionIntro v-if="project">
 
-      <div class="row my-4 my-md-5">
+      <div class="row my-3 my-md-4">
         <div class="col">
           <h1 class="text-center text-white res-fs-14 res-fs-md-16 ">{{ project.title }}</h1>
         </div>
@@ -54,14 +54,8 @@
                 <i class="fas fa-external-link-alt text-white ms-2"></i>
               </a>
 
-              <p class="my-5 text-secondary">
-                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad alias dignissimos dolor dolorem dolorum earum enim est incidunt magni maiores mollitia nostrum, pariatur, perferendis recusandae rem rerum saepe sunt vero.</span>
-                <br>
-                <br>
-                <span>Ab accusantium expedita fugit minus odit quaerat unde voluptates! Ad architecto consequatur debitis dolor exercitationem expedita harum inventore labore, laboriosam, nam natus nisi qui rem sapiente, similique temporibus totam voluptas.</span><span>Ad atque eveniet labore molestias non, quisquam reiciendis ut. Adipisci eligendi error nisi nobis optio quisquam rem repellendus rerum sunt tempore! Ad dolores ea earum, fugit impedit suscipit ullam vel.</span>
-                <br>
-                <br>
-                <span>A aliquid aperiam assumenda consectetur dolore eaque eligendi, facilis itaque labore placeat possimus, quia quod repellendus? Accusantium beatae eius eligendi inventore ipsum laborum molestiae molestias officia saepe tenetur. Debitis, odio.</span>
+              <p class="resume text-deep res-fs-5 res-fs-md-6 my-5">
+                <span v-html="resume.resume"></span>
               </p>
 
               <router-link v-if="project.id < 5" :to="{ name: 'project', params: { id: nextProjectId } }"
@@ -70,7 +64,7 @@
                 <i class="fas fa-arrow-right text-white ms-2"></i>
               </router-link>
 
-              <router-link to="/" class="d-block btn btn-deep text-light w-fit-content mx-auto mt-4">
+              <router-link to="/#showcase" class="d-block btn btn-deep text-light w-fit-content mx-auto mt-4">
                 <i class="fas fa-arrow-left text-white ms-2"></i>
                 Retour aux projets
               </router-link>
@@ -91,7 +85,8 @@
 </template>
 
 <script setup>
-import projects from "@/projects";
+import projects from "@/data/projects.js";
+import resumes from "@/data/resumes.js";
 
 import {computed, watch} from 'vue'
 // import {useRouter} from 'vue-router'
@@ -111,8 +106,15 @@ let project = computed({
   preview: null,
 });
 
+let resume = computed({
+  id: null,
+  resume: null,
+});
+
 watch(() => route, (newVal) => {
     project = projects.find(p => p.id == newVal.params.id);
+    resume = resumes.find(r => r.id == newVal.params.id);
+    console.log(resume);
   },
   {
     immediate: true
@@ -148,17 +150,21 @@ const nextProjectId = parseInt(props.id) + 1;
 }
 
 .img-preview {
-  margin-top: -10vh !important;
+  margin-top: -15vh !important;
   width: 90vw;
 
   @media (min-width: 768px) {
-    margin-top: -20vh !important;
+    margin-top: -22vh !important;
     width: 60vw;
   }
 
   @media (min-width: 960px) {
     width: 45vw;
   }
+}
+
+.resume {
+  line-height: 1.8;
 }
 </style>
 

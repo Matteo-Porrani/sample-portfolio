@@ -1,9 +1,9 @@
 <template>
   <TheHeader/>
 
-  <router-view :key="$route.fullPath" v-slot="slotProps">
+  <router-view v-slot="slotProps">
     <transition name="route" mode="out-in">
-      <component :is="slotProps.Component"></component>
+      <component :key="$route.path" :is="slotProps.Component"></component>
     </transition>
   </router-view>
 
