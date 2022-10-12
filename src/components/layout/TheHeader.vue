@@ -14,9 +14,36 @@
           <span class="logo-text res-fs-10 fw-bold text-light d-inline-block">MP</span>
         </router-link>
 
-        <router-link class="res-fs-4 res-fs-md-5 link-light text-decoration-none" to="/#showcase">Projets</router-link>
-        <router-link class="res-fs-4 res-fs-md-5 link-light text-decoration-none" to="/#contact">Contact</router-link>
-        <router-link class="res-fs-4 res-fs-md-5 link-light text-decoration-none" to="/about">À propos</router-link>
+        <router-link class="d-none d-md-inline res-fs-4 res-fs-md-5 link-light text-decoration-none" to="/#showcase">
+          Projets
+        </router-link>
+        <router-link class="d-none d-md-inline res-fs-4 res-fs-md-5 link-light text-decoration-none" to="/#contact">
+          Contact
+        </router-link>
+        <router-link class="d-none d-md-inline res-fs-4 res-fs-md-5 link-light text-decoration-none" to="/about">À
+          propos
+        </router-link>
+
+
+        <a @click="toggleMenu" id="mobile-menu" class="position-relative">
+          <i v-if="!menuIsOpen" class="fas fa-bars text-light res-fs-14 me-1"></i>
+
+          <i v-if="menuIsOpen" class="fas fa-times text-light res-fs-15 me-1"></i>
+
+          <transition name="menu">
+            <div v-if="menuIsOpen" class="position-absolute bg-deep text-center rounded-3 end-0 p-3 mt-1" style="width: 60vw">
+              <router-link class="d-block res-fs-7 link-light text-decoration-none" to="/#showcase">Projets
+              </router-link>
+              <router-link class="d-block res-fs-7 link-light text-decoration-none mt-4" to="/#contact">Contact
+              </router-link>
+              <router-link class="d-block res-fs-7 link-light text-decoration-none mt-4" to="/about">À propos
+              </router-link>
+            </div>
+          </transition>
+
+        </a>
+
+
       </nav>
 
     </div>
@@ -24,16 +51,15 @@
 </template>
 
 <script setup>
+import {ref} from 'vue';
+import {useRoute} from 'vue-router';
 
-import { useRoute } from 'vue-router';
 const route = useRoute();
 
-// import { watch } from 'vue';
-
-// watch(
-//   route,
-//   (newValue) => console.log(newValue.fullPath)
-// );
+const menuIsOpen = ref(false);
+const toggleMenu = () => {
+  menuIsOpen.value = !menuIsOpen.value;
+}
 
 </script>
 
@@ -74,5 +100,24 @@ header {
   }
 
 }
+
+
+.menu-enter-from,
+.menu-leave-to {
+  opacity: 0;
+  max-height: 0;
+}
+
+.menu-enter-to,
+.menu-leave-from {
+  opacity: 1;
+  max-height: 70vh;
+}
+
+.menu-enter-active,
+.menu-leave-active {
+  transition: all .3s ease-out;
+}
+
 
 </style>

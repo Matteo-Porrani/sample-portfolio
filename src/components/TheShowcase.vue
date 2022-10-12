@@ -47,23 +47,20 @@
 import { ref, onMounted } from 'vue';
 import { useRoute } from "vue-router";
 import projects from "@/data/projects";
-import ProjectCard from '@/components/ProjectCard'
+import ProjectCard from '@/components/ProjectCard';
 
 const route = useRoute();
 const showcase = ref(null);
 
 onMounted(() => {
-  console.log(showcase.value);
-  console.log(route.hash);
-
-  if (route.hash) {
+  if (route.hash === '#showcase') {
     window.scrollTo({
       left: 0,
-      top: showcase.value.getBoundingClientRect().y,
+      top: showcase.value.getBoundingClientRect().y - 20,
       behavior: 'smooth'
     });
   }
 
-})
+});
 
 </script>

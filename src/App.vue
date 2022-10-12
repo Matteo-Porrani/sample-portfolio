@@ -1,6 +1,8 @@
 <template>
   <TheHeader/>
 
+<!--  <MobileMenu/>-->
+
   <router-view v-slot="slotProps">
     <transition name="route" mode="out-in">
       <component :key="$route.path" :is="slotProps.Component"></component>
@@ -11,6 +13,7 @@
 
 <script setup>
 import TheHeader from '@/components/layout/TheHeader';
+// import MobileMenu from "@/components/layout/MobileMenu";
 
 </script>
 

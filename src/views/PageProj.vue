@@ -114,7 +114,6 @@ let resume = computed({
 watch(() => route, (newVal) => {
     project = projects.find(p => p.id == newVal.params.id);
     resume = resumes.find(r => r.id == newVal.params.id);
-    console.log(resume);
   },
   {
     immediate: true

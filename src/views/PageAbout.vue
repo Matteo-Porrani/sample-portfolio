@@ -38,13 +38,11 @@
               </div>
             </div>
 
-            <a class="btn btn-accent text-white d-block w-fit-content mx-auto mt-5" href="../assets/pdf/cv-porrani.pdf" target="_blank" download rel="noopener noreferrer">Télécharger mon CV</a>
+            <a href="/cv-porrani.pdf">Test</a>
           </MasterCard>
 
         </div>
       </section>
-
-
 
     </SectionContent>
 
@@ -67,3 +65,7 @@ b {
   border-bottom: 2px solid $accent;
 }
 </style>
+
+
+
+:src="require('@/assets/images/' + project.preview)"
