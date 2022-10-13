@@ -55,14 +55,12 @@ const resumes = [
     id: 3,
     resume: `Ce jeu n'est pas une création originale, mais plutôt un clone de <strong><a class="text-decoration-none link-accent" href="https://joshcollinsworth.com/projects" target="_blank" title="Quina by Josh Collinsworth">Quina <i class="fas fa-external-link-alt"></i></a></strong>, créé par Josh Collinsworth.
     <br><br>
-    Je me suis inspiré de l'original américain pour construire une <strong>SPA (Single Page Application)</strong> en m'appuyant sur <strong>VueJS</strong> et en particulier sur deux briques fondamentales du framework, le <strong>Router</strong> pour la navigation et le tout nouveau store <strong>Pinia</strong>, qui permet de partager facilement les données reactives entre les composants.
+    Je me suis inspiré de l'original américain pour construire une <strong>SPA (Single Page Application)</strong> en m'appuyant sur <strong>VueJS</strong> et en particulier sur deux briques fondamentales du framework : le <strong>Router</strong> pour la navigation et <strong>Pinia</strong>, le nouveau système de "store" qui permet de partager facilement les données entre les composants.
     <br><br>
-    L'idée était de m'amuser avec les transitions et animations en fonction des phases de jeu et des actions utilisateur, et aussi de proposer un <strong>choix entre deux langues</strong> : le français et l'italien.
+    L'idée était de m'amuser avec les transitions et animations en réponse aux actions utilisateur et aux phases de jeu, et aussi de proposer un <strong>choix entre deux langues</strong> : le français et l'italien.
     <br>
     <br>
-    Pour l'hébergement j'ai utilisé <strong>Netlify</strong>, qui fournit un système simplifié de CI/CD avec liaison directe à un répository GitHub. 
-    
-`,
+    Pour l'hébergement j'ai utilisé <strong>Netlify</strong>, qui fournit un système simplifié de CI/CD avec liaison directe à un dépôt GitHub.`,
   },
   {
     id: 4,
