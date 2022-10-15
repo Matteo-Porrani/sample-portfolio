@@ -10,17 +10,27 @@
     <div class="container">
 
       <nav class="d-flex align-items-center justify-content-between gap-5">
-        <router-link to="/" class="text-decoration-none">
+        <router-link to="/" class="d-inline-block text-decoration-none w-75">
           <img height="46" src="../../assets/elements/fake-logo.svg" alt="home-logo">
           <span class="logo-text res-fs-10 fw-bold text-light d-inline-block">MP</span>
         </router-link>
 
-        <router-link v-for="link in headerLinks"
-                     :key="link.id"
-                     :to="link.path"
-                     class="d-none d-md-inline res-fs-4 res-fs-md-5 link-light text-decoration-none">
-        {{ link.label }}
-        </router-link>
+
+        <div class="w-50 d-flex justify-content-between">
+          <router-link v-for="link in headerLinks"
+                       :key="link.id"
+                       :to="link.path"
+                       class="d-none d-md-inline res-fs-4 res-fs-md-5 link-light text-decoration-none">
+            {{ link.label }}
+          </router-link>
+
+        </div>
+
+
+
+
+
+
 
         <a @click="toggleMenu" id="mobile-menu" class="d-block d-md-none position-relative">
           <i v-if="!menuIsOpen" class="fas fa-bars text-light res-fs-14 me-1"></i>

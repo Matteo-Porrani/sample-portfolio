@@ -25,9 +25,18 @@
 
                 <div class="row mt-3 mb-5">
                   <div class="col d-flex justify-content-center">
-                    <div class="about-icon-wrapper d-flex justify-content-center align-items-center bg-dark text-light rounded rounded-pill">
-                      <i class="fas fa-user-astronaut res-fs-24 res-fs-md-28"></i>
+
+                    <div class="icon-wrapper position-relative mx-auto rounded rounded-pill overflow-hidden">
+                      <img class="position-absolute top-50 start-50 translate-middle" src="../assets/elements/sketch1.svg" alt="">
+                      <i class="fas fa-laptop-code res-fs-18 res-fs-md-24 position-absolute top-50 start-50 text-white"></i>
+                      <i class="fas fa-laptop-code res-fs-18 res-fs-md-24 position-absolute top-50 start-50 text-dark translate-middle"></i>
                     </div>
+
+
+
+<!--                    <div class="about-icon-wrapper d-flex justify-content-center align-items-center bg-soft text-dark rounded rounded-pill">-->
+<!--                      <i class="fas fa-user-astronaut res-fs-24 res-fs-md-28"></i>-->
+<!--                    </div>-->
 
                   </div>
                 </div>
@@ -58,7 +67,7 @@
             </div>
 
             <a href="/cv-porrani-22.pdf"
-               class="btn btn-accent text-light d-block w-fit-content mx-auto mt-5"
+               class="btn btn-accent text-light d-block w-fit-content mx-auto res-fs-6 res-fs-md-7 mt-5"
                title="télécharger mon CV"
                target="_blank"
                download
@@ -94,14 +103,30 @@ b {
   border-bottom: 2px solid $accent;
 }
 
-.about-icon-wrapper {
-  height: 100px;
-  width: 100px;
+//.about-icon-wrapper {
+//  height: 100px;
+//  width: 100px;
+//
+//  @media (min-width: 768px) {
+//    height: 120px;
+//    width: 120px;
+//  }
+//}
+
+
+.icon-wrapper {
+  width: 96px;
+  height: 96px;
+
+  i:first-of-type {
+    transform: translate(-44%, -46%);
+  }
 
   @media (min-width: 768px) {
-    height: 120px;
-    width: 120px;
+    width: 110px;
+    height: 110px;
   }
+
 }
 </style>
 

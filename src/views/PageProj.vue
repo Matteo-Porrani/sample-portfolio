@@ -172,8 +172,8 @@ const nextProjectId = parseInt(props.id) + 1;
   }
 
   @media (min-width: 1200px) {
+    margin-top: -24vh !important;
     width: 60vw;
-    margin-top: -14vh !important;
   }
 }
 
