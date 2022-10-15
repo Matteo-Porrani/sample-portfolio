@@ -81,6 +81,17 @@ onMounted(() => {
   z-index: 99;
 }
 
+.lazy-element {
+  opacity: 0;
+  transform: translateY(22px);
+  transition: all .4s ease-in-out;
+
+  &.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .contact-link-mail:hover {
   color: $primary !important;
   border-bottom: 2px solid $primary;

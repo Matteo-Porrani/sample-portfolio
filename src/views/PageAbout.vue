@@ -26,7 +26,7 @@
                 <div class="row mt-3 mb-5">
                   <div class="col d-flex justify-content-center">
                     <div class="about-icon-wrapper d-flex justify-content-center align-items-center bg-dark text-light rounded rounded-pill">
-                      <i class="fas fa-user-astronaut res-fs-26 res-fs-md-30"></i>
+                      <i class="fas fa-user-astronaut res-fs-24 res-fs-md-28"></i>
                     </div>
 
                   </div>
@@ -40,7 +40,7 @@
                   <br>
                   <br>
                   <span>
-                  Deux ans plus tard, j’ai décidé de me reconvertir en intégrant la formation <b>Développeur Web & Web Mobile</b> au sein de l'école <b>La Passerelle</b> (Paris 19e), une formation bootcamp de 5 mois axée sur JavaScript, NodeJS, React, PHP, Symfony et MySQL / phpMyAdmin.
+                  Deux ans plus tard, j’ai décidé de me reconvertir en intégrant la formation <b>Développeur Web & Web Mobile</b> au sein de l'école <b>La Passerelle</b> (Paris 19e), un bootcamp de 5 mois avec au programme : JavaScript, NodeJS, React, PHP, Symfony et MySQL / phpMyAdmin.
                 </span>
                   <br>
                   <br>
@@ -95,12 +95,12 @@ b {
 }
 
 .about-icon-wrapper {
-  height: 120px;
-  width: 120px;
+  height: 100px;
+  width: 100px;
 
   @media (min-width: 768px) {
-    height: 140px;
-    width: 140px;
+    height: 120px;
+    width: 120px;
   }
 }
 </style>
