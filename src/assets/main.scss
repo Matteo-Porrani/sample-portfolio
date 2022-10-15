@@ -68,5 +68,11 @@ UTILITY FONT-SIZE CLASSES
             font-size: $font-size !important;
         }
     }
+
+    @include media-breakpoint-up(xl) {
+        .res-fs-xl-#{$font-key} {
+            font-size: $font-size !important;
+        }
+    }
 }
 

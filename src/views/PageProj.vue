@@ -12,7 +12,7 @@
       <div class="row my-3">
         <div class="col">
           <div class="icon-wrapper position-relative mx-auto rounded rounded-pill overflow-hidden">
-            <img class="position-absolute top-50 start-50 translate-middle" src="../assets/sketch1.svg" alt="">
+            <img class="position-absolute top-50 start-50 translate-middle" src="../assets/elements/sketch1.svg" alt="">
             <i :class="project.icon" class="res-fs-18 res-fs-md-24 position-absolute top-50 start-50 text-deep"></i>
             <i :class="project.icon"
                class="res-fs-18 res-fs-md-24 position-absolute top-50 start-50 text-white translate-middle"></i>
@@ -58,18 +58,29 @@
                 <span v-html="resume.resume"></span>
               </p>
 
+            </div>
+          </div>
+
+          <div class="row flex-column flex-md-row mt-3">
+
+            <div class="col-md-6 text-center text-md-end">
+              <router-link to="/#showcase"
+                           class="btn btn-deep text-light w-50"
+                           title="retour aux projets">
+                <i class="fas fa-arrow-left text-white ms-2"></i>
+                Retour <span class="d-none d-lg-inline">aux projets</span>
+              </router-link>
+            </div>
+
+            <div class="col-md-6 text-center text-md-start mt-3 mt-md-0">
               <router-link v-if="project.id < 5" :to="{ name: 'project', params: { id: nextProjectId } }"
-                           class="btn btn-accent text-white d-block w-fit-content mx-auto mt-4" title="projet suivant">
+                           class="btn btn-accent text-light w-50"
+                           title="projet suivant">
                 Projet suivant
                 <i class="fas fa-arrow-right text-white ms-2"></i>
               </router-link>
-
-              <router-link to="/#showcase" class="d-block btn btn-deep text-light w-fit-content mx-auto mt-4" title="retour aux projets">
-                <i class="fas fa-arrow-left text-white ms-2"></i>
-                Retour aux projets
-              </router-link>
-
             </div>
+
           </div>
 
 
@@ -78,7 +89,6 @@
 
 
     </SectionContent>
-
 
     <!--          <button @click="router.back()" class="btn btn-accent text-white d-block mx-auto">Go Back</button>-->
   </div>
@@ -154,11 +164,16 @@ const nextProjectId = parseInt(props.id) + 1;
 
   @media (min-width: 768px) {
     margin-top: -22vh !important;
-    width: 60vw;
+    width: 80vw;
   }
 
-  @media (min-width: 960px) {
-    width: 45vw;
+  @media (min-width: 992px) {
+    margin-top: -18vh !important;
+  }
+
+  @media (min-width: 1200px) {
+    width: 60vw;
+    margin-top: -14vh !important;
   }
 }
 

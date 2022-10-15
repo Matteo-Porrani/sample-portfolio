@@ -4,26 +4,23 @@
             'header-home': route.path === '/',
             'header-about': route.path === '/about',
             'header-project': route.path.includes('/project'),
+            'header-test': route.path.includes('/test'),
           }"
   >
     <div class="container">
 
       <nav class="d-flex align-items-center justify-content-between gap-5">
         <router-link to="/" class="text-decoration-none">
-          <img height="46" src="../../assets/fake-logo.svg" alt="home-logo">
+          <img height="46" src="../../assets/elements/fake-logo.svg" alt="home-logo">
           <span class="logo-text res-fs-10 fw-bold text-light d-inline-block">MP</span>
         </router-link>
 
-        <router-link class="d-none d-md-inline res-fs-4 res-fs-md-5 link-light text-decoration-none" to="/#showcase">
-          Projets
+        <router-link v-for="link in headerLinks"
+                     :key="link.id"
+                     :to="link.path"
+                     class="d-none d-md-inline res-fs-4 res-fs-md-5 link-light text-decoration-none">
+        {{ link.label }}
         </router-link>
-        <router-link class="d-none d-md-inline res-fs-4 res-fs-md-5 link-light text-decoration-none" to="/#contact">
-          Contact
-        </router-link>
-        <router-link class="d-none d-md-inline res-fs-4 res-fs-md-5 link-light text-decoration-none" to="/about">À
-          propos
-        </router-link>
-
 
         <a @click="toggleMenu" id="mobile-menu" class="d-block d-md-none position-relative">
           <i v-if="!menuIsOpen" class="fas fa-bars text-light res-fs-14 me-1"></i>
@@ -33,12 +30,16 @@
           <transition name="menu">
             <div v-if="menuIsOpen" class="position-absolute bg-secondary shadow text-center rounded-3 end-0 p-3 mt-1"
                  style="width: 60vw; z-index: 999;">
-              <router-link class="d-block res-fs-7 link-light text-decoration-none" to="/#showcase">Projets
+              <router-link class="d-block res-fs-7 link-light text-decoration-none" to="/">Accueil
               </router-link>
-              <router-link class="d-block res-fs-7 link-light text-decoration-none mt-4" to="/#contact">Contact
+
+              <router-link v-for="link in headerLinks"
+                           :key="link.id"
+                           :to="link.path"
+                           class="d-block res-fs-7 link-light text-decoration-none mt-4">
+                {{ link.label }}
               </router-link>
-              <router-link class="d-block res-fs-7 link-light text-decoration-none mt-4" to="/about">À propos
-              </router-link>
+
             </div>
           </transition>
 
@@ -56,6 +57,12 @@ import {ref} from 'vue';
 import {useRoute} from 'vue-router';
 
 const route = useRoute();
+
+const headerLinks = [
+  {id: 2, path: '/#showcase', label: 'Projets'},
+  {id: 3, path: '/#contact', label: 'Contact'},
+  {id: 4, path: '/about', label: 'À propos'},
+];
 
 const menuIsOpen = ref(false);
 const toggleMenu = () => {
@@ -95,6 +102,13 @@ header {
   &.header-project:after {
     background-color: $deep;
   }
+
+  &.header-test:after {
+    background: $primary;
+    //background: radial-gradient(circle, #7094e6 25%, $primary 25%);
+    //background-color: #ffcc00;
+  }
+
 
   .logo-text {
     transform: translate(0, 6px);

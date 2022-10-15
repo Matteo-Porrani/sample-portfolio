@@ -20,8 +20,8 @@ const skills = ['PHP', 'JavaScript', 'VueJS', 'CSS/SASS', 'Bootstrap', 'Symfony'
 
 <style lang="scss" scoped>
 
-.skills-wrapper {
-  margin-top: -6vh !important;
-}
+//.skills-wrapper {
+//  margin-top: -2vh !important;
+//}
 
 </style>

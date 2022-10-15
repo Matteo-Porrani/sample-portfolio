@@ -1,16 +1,12 @@
 <template>
-  <article class="bg-white rounded-3 shadow text-center px-3 py-4 p-md-5 mx-3">
-
-<!--    <i :class="icon" class="text-primary me-2 fs-1 my-3"></i>-->
-
+  <article class="lazy-element bg-white rounded-3 shadow text-center px-3 py-4 p-md-5 mx-3">
 
     <div class="icon-wrapper position-relative mx-auto rounded rounded-pill overflow-hidden">
-      <img class="position-absolute top-50 start-50 translate-middle" src="../assets/sketch1.svg" alt="">
+      <img class="position-absolute top-50 start-50 translate-middle" src="../assets/elements/sketch1.svg" alt="">
 
       <i :class="icon" class="fa-3x position-absolute top-50 start-50 text-white"></i>
       <i :class="icon" class="fa-3x position-absolute top-50 start-50 translate-middle"></i>
     </div>
-
 
     <h3 class="mt-3">
       <slot name="project-card-title"></slot>
@@ -45,16 +41,23 @@ article {
   }
 
   @media(min-width: 768px) {
-    width: 30%;
+    width: 44%;
 
     @for $i from 1 through 5 {
-
       &:nth-child(#{$i}) {
         margin-top: $i * 3vh;
       }
-
     }
+  }
 
+  @media(min-width: 1200px) {
+    width: 30%;
+
+    @for $i from 1 through 5 {
+      &:nth-child(#{$i}) {
+        margin-top: $i * 3vh;
+      }
+    }
   }
 
 }

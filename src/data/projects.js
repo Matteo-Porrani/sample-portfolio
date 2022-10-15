@@ -2,7 +2,8 @@ const projects = [
     {
         id: 1,
         title: '4Store',
-        icon: 'fas fa-store',
+        // icon: 'fas fa-store',
+        icon: 'fas fa-cash-register',
         desc: "Site démo pour une boutique de vêtements en ligne",
         preview: 'preview-store-2.png',
         href: 'https://demo-4store.herokuapp.com',
@@ -27,14 +28,15 @@ const projects = [
         id: 4,
         title: 'le Tour du Monde',
         icon: 'fas fa-globe-americas',
-        desc: "Mini site pour passionnés de géographie",
+        desc: "Mini site pour découvrir le monde et ses merveilles",
         preview: 'preview-tour-2.png',
         href: 'https://letourdumonde.netlify.app',
     },
     {
         id: 5,
         title: "Argonautes 3.0",
-        icon: 'fas fa-skull-crossbones',
+        // icon: 'fas fa-skull-crossbones',
+        icon: 'fas fa-horse',
         desc: "Implémentation de CRUD sur fond de quête épique",
         preview: 'preview-argo.png',
         href: 'https://ad1webbits.alwaysdata.net'

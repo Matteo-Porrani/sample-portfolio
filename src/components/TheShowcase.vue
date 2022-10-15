@@ -1,9 +1,12 @@
 <template>
-  <section ref="showcase" id="showcase" class="showcase pb-5 py-md-5">
+  <section ref="showcase"
+           id="showcase"
+           class="showcase position-relative pb-5 py-md-5">
     <div class="container">
 
       <div class="row">
         <div class="col-12 col-md-8 mx-auto">
+
           <h2 class="res-fs-13 res-fs-md-14 text-center">Projets</h2>
           <p class="res-fs-5 res-fs-md-6 text-secondary text-center mt-3">
             Voici un panel de projets personnels qui m'ont permis d'explorer<br>
@@ -61,6 +64,58 @@ onMounted(() => {
     });
   }
 
+  const cards = document.querySelectorAll('.lazy-element');
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      entry.target.classList.toggle('show', entry.isIntersecting);
+
+      if (entry.isIntersecting) {
+        observer.unobserve(entry.target);
+      }
+
+    });
+  }, {
+    threshold: .5,
+    // rootMargin: '-80px'
+  });
+
+  cards.forEach(card => observer.observe(card));
 });
 
 </script>
+
+<style lang="scss" scoped>
+@import '../assets/variables.scss';
+
+#showcase {
+  z-index: 1;
+
+  &:after {
+    transition: all 1s ease-in-out;
+    background: $dark;
+    position: absolute;
+    top: 80%;
+    left: 0;
+    content: '';
+    clip-path: polygon(0 35%, 100% 0, 100% 100%, 0% 100%);
+    width: 100%;
+    z-index: -1;
+    height: 65vh;
+
+    @media (min-width: 768px) {
+      height: 60vh;
+    }
+  }
+}
+
+.lazy-element {
+  opacity: 0;
+  transform: translateY(22px);
+  transition: all .4s ease-in-out;
+
+  &.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+</style>
