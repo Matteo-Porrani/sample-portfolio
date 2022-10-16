@@ -11,7 +11,8 @@ const projects = [
     {
         id: 2,
         title: 'MGP Battle',
-        icon: 'fas fa-flag-checkered',
+        // icon: 'fas fa-flag-checkered',
+        icon: 'fas fa-trophy',
         desc: "Application web de pronostics sportifs pour grand prix moto",
         preview: 'preview-battle-2.png',
         href: 'https://mgpbattle.alwaysdata.net'
@@ -19,7 +20,8 @@ const projects = [
     {
         id: 3,
         title: "Penta",
-        icon: 'fas fa-dice-d6',
+        // icon: 'fas fa-dice-d6',
+        icon: 'fas fa-sort-alpha-down',
         desc: "Entre vous et la victoire seulement cinq petites lettres",
         preview: 'preview-penta.png',
         href: 'https://penta-game.netlify.app'
