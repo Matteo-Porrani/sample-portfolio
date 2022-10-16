@@ -31,20 +31,19 @@
 </script>
 
 <style lang="scss" scoped>
+@import '../assets/variables.scss';
 
 b {
-  border-bottom: 2px solid #769bf2;
+  border-bottom: 2px solid $primary;
 
   @media (min-width: 1200px) {
-    border-color: #f8f9fa;
+    border-color: $light;
   }
 }
 
 .hero-grid {
-  //border: 5px solid #e72;
-
   display: grid;
-  grid-template-rows: 2fr 5fr auto;
+  grid-template-rows: 4fr 9fr auto;
   margin-top: 1rem;
 
   @media (min-width: 768px) {
@@ -94,7 +93,6 @@ header {
 }
 
 .avatar {
-  //border: 4px solid #939;
   //background-color: rgba(34, 224, 129, 0.3);
   display: flex;
   justify-content: center;
@@ -110,7 +108,7 @@ header {
   }
 
   img {
-    width: 60%; /* of its container... */
+    width: 40%; /* of its container... */
     max-width: 220px;
     display: block;
     margin: 0 auto;

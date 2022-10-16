@@ -32,12 +32,6 @@
                       <i class="fas fa-laptop-code res-fs-18 res-fs-md-24 position-absolute top-50 start-50 text-dark translate-middle"></i>
                     </div>
 
-
-
-<!--                    <div class="about-icon-wrapper d-flex justify-content-center align-items-center bg-soft text-dark rounded rounded-pill">-->
-<!--                      <i class="fas fa-user-astronaut res-fs-24 res-fs-md-28"></i>-->
-<!--                    </div>-->
-
                   </div>
                 </div>
 
@@ -49,7 +43,7 @@
                   <br>
                   <br>
                   <span>
-                  Deux ans plus tard, j’ai décidé de me reconvertir en intégrant la formation <b>Développeur Web & Web Mobile</b> au sein de l'école <b>La Passerelle</b> (Paris 19e), un bootcamp de 5 mois avec au programme : JavaScript, NodeJS, React, PHP, Symfony et MySQL / phpMyAdmin.
+                  Deux ans plus tard, j’ai décidé de me reconvertir en intégrant le bootcamp <b>Développeur Web & Web Mobile</b> de l'école <b>La Passerelle</b> (Paris 19e), une formation de 5 mois avec au programme : JavaScript, NodeJS, React, PHP, Symfony et MySQL / phpMyAdmin.
                 </span>
                   <br>
                   <br>
@@ -112,7 +106,6 @@ b {
 //    width: 120px;
 //  }
 //}
-
 
 .icon-wrapper {
   width: 96px;

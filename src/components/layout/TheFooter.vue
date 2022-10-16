@@ -4,14 +4,14 @@
       <div class="row">
         <div class="col text-center">
 
+          <p>MP &copy; 2022</p>
 
-
-          <p>
-            <i class="fas fa-quote-left res-fs-4 px-2"></i>
-            There are only two kinds of programming languages: <br>the ones people complain about and the ones nobody uses.
-            <i class="fas fa-quote-right res-fs-4 px-2"></i>
-          </p>
-          <p class="fw-bold text-secondary res-fs-6 res-fs-md-7">Bjarne Stroustrup</p>
+<!--          <p>-->
+<!--            <i class="fas fa-quote-left res-fs-4 px-2"></i>-->
+<!--            There are only two kinds of programming languages: <br>the ones people complain about and the ones nobody uses.-->
+<!--            <i class="fas fa-quote-right res-fs-4 px-2"></i>-->
+<!--          </p>-->
+<!--          <p class="fw-bold text-secondary res-fs-6 res-fs-md-7">Bjarne Stroustrup</p>-->
 
         </div>
       </div>
