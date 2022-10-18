@@ -172,9 +172,15 @@ const nextProjectId = parseInt(props.id) + 1;
   }
 
   @media (min-width: 1200px) {
-    margin-top: -24vh !important;
+    margin-top: -16vh !important;
     width: 60vw;
   }
+
+  @media (min-width: 1600px) {
+    margin-top: -20vh !important;
+    width: 60vw;
+  }
+
 }
 
 .resume {
