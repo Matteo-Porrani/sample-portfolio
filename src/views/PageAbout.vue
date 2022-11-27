@@ -10,8 +10,7 @@
       </div>
     </SectionIntro>
 
-
-    <!-- ### CONTENT ### --><!---->
+    <!-- ### CONTENT ### -->
     <SectionContent>
 
       <section>
@@ -21,7 +20,6 @@
 
             <div class="row">
               <div class="col lh-lg text-center text-md-start">
-
 
                 <div class="row mt-3 mb-5">
                   <div class="col d-flex justify-content-center">
@@ -35,8 +33,7 @@
                   </div>
                 </div>
 
-
-                <p class="res-fs-6 res-fs-md-7">
+                <p class="res-fs-5 res-fs-md-7">
                 <span>
                   Ayant un fort attrait pour l’univers numérique et la programmation, j’ai commencé en 2018 à me former en autodidacte aux fondamentaux du web, notamment HTML et CSS.
                 </span>
@@ -80,14 +77,9 @@
   </div>
 </template>
 
-<style lang="scss" scoped>
-</style>
-<script>
+<script setup>
 import MasterCard from "@/components/layout/MasterCard";
 
-export default {
-  components: {MasterCard}
-}
 </script>
 
 <style lang="scss" scoped>
@@ -96,16 +88,6 @@ export default {
 b {
   border-bottom: 2px solid $accent;
 }
-
-//.about-icon-wrapper {
-//  height: 100px;
-//  width: 100px;
-//
-//  @media (min-width: 768px) {
-//    height: 120px;
-//    width: 120px;
-//  }
-//}
 
 .icon-wrapper {
   width: 96px;
@@ -119,8 +101,6 @@ b {
     width: 110px;
     height: 110px;
   }
-
 }
+
 </style>
-
-

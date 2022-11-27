@@ -5,7 +5,11 @@
 
   <router-view v-slot="slotProps">
     <transition name="route" mode="out-in">
-      <component :key="$route.path" :is="slotProps.Component"></component>
+
+      <component :key="$route.path"
+                 :is="slotProps.Component">
+      </component>
+
     </transition>
   </router-view>
 
@@ -25,8 +29,6 @@ import TheHeader from '@/components/layout/TheHeader';
   //flex-direction: column;
   //min-height: 100vh;
 }
-
-
 
 .route-enter-from,
 .route-leave-to {

@@ -14,14 +14,12 @@ const routes = [
         name: 'project',
         // route level code-splitting : this generates a separate chunk (about.[hash].js) for this route
         // which is lazy-loaded when the route is visited.
-        component: () => import(/* webpackChunkName: "test" */ '../views/PageProj.vue'),
+        component: () => import(/* webpackChunkName: "project" */ '../views/PageProj.vue'),
         props: route => ({id: parseInt(route.params.id)})
     },
     {
         path: '/about',
         name: 'about',
-        // route level code-splitting : this generates a separate chunk (about.[hash].js) for this route
-        // which is lazy-loaded when the route is visited.
         component: () => import(/* webpackChunkName: "about" */ '../views/PageAbout.vue')
     },
     {

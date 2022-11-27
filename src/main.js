@@ -1,8 +1,8 @@
 import "/node_modules/bootstrap/dist/css/bootstrap.min.css";
 
-import { createApp } from 'vue'
-import App from './App.vue'
-import router from './router'
+import { createApp } from 'vue';
+import App from './App.vue'; /* root component */
+import router from './router';
 
 // global components
 import SectionIntro from '@/components/layout/SectionIntro';
@@ -14,7 +14,6 @@ const app = createApp(App);
 app.component('SectionIntro', SectionIntro);
 app.component('SectionContent', SectionContent);
 app.component('MasterCard', MasterCard);
-
 
 app.use(router);
 

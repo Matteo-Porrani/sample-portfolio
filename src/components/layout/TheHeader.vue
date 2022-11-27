@@ -10,35 +10,31 @@
     <div class="container">
 
       <nav class="d-flex align-items-center justify-content-between gap-5">
+
         <router-link to="/" class="d-inline-block text-decoration-none w-75">
           <img height="46" src="../../assets/elements/fake-logo.svg" alt="home-logo">
           <span class="logo-text res-fs-10 fw-bold text-light d-inline-block">MP</span>
         </router-link>
 
-
         <div class="w-50 d-flex justify-content-between">
+          <!-- DESKTOP LINKS -->
           <router-link v-for="link in headerLinks"
                        :key="link.id"
                        :to="link.path"
-                       class="d-none d-md-inline res-fs-4 res-fs-md-5 link-light text-decoration-none">
+                       class="d-none d-md-inline desktop-link res-fs-4 res-fs-md-5 link-light text-decoration-none">
             {{ link.label }}
           </router-link>
-
         </div>
 
-
-
-
-
-
-
+        <!-- MOBILE MENU -->
         <a @click="toggleMenu" id="mobile-menu" class="d-block d-md-none position-relative">
           <i v-if="!menuIsOpen" class="fas fa-bars text-light res-fs-14 me-1"></i>
 
           <i v-if="menuIsOpen" class="fas fa-times text-light res-fs-15 me-1"></i>
 
           <transition name="menu">
-            <div v-if="menuIsOpen" class="position-absolute bg-secondary shadow text-center rounded-3 end-0 p-3 mt-1"
+            <div v-if="menuIsOpen"
+                 class="position-absolute bg-secondary shadow text-center rounded-3 end-0 p-3 mt-1"
                  style="width: 60vw; z-index: 999;">
               <router-link class="d-block res-fs-7 link-light text-decoration-none" to="/">Accueil
               </router-link>
@@ -49,12 +45,9 @@
                            class="d-block res-fs-7 link-light text-decoration-none mt-4">
                 {{ link.label }}
               </router-link>
-
             </div>
           </transition>
-
         </a>
-
 
       </nav>
 
@@ -119,13 +112,18 @@ header {
     //background-color: #ffcc00;
   }
 
-
   .logo-text {
     transform: translate(0, 6px);
   }
 
+  .desktop-link {
+    border-bottom: 1px solid transparent;
+    &:hover {
+      color: $primary !important;
+      //border-color: $primary;
+    }
+  }
 }
-
 
 .menu-enter-from,
 .menu-leave-to {
@@ -143,6 +141,5 @@ header {
 .menu-leave-active {
   transition: all .3s ease-out;
 }
-
 
 </style>

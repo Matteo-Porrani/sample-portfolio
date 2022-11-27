@@ -22,8 +22,6 @@
       </p>
     </div>
 
-
-
   </div>
 </template>
 
@@ -119,8 +117,6 @@ header {
       width: 80%; /* of its container... */
     }
   }
-
-
 
 }
 </style>
