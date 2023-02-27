@@ -1,21 +1,22 @@
 const projects = [
     {
         id: 1,
-        title: '4Store',
-        // icon: 'fas fa-store',
-        icon: 'fas fa-cash-register',
-        desc: "Site démo pour une boutique de vêtements en ligne",
-        preview: 'preview-store-2.png',
-        href: 'https://demo-4store.herokuapp.com',
-    },
-    {
-        id: 2,
+
         title: 'MGP Battle',
         // icon: 'fas fa-flag-checkered',
         icon: 'fas fa-trophy',
         desc: "Application web de pronostics sportifs pour grand prix moto",
         preview: 'preview-battle-2.png',
         href: 'https://mgpbattle.alwaysdata.net'
+    },
+    {
+        id: 2,
+        title: '4Store',
+        // icon: 'fas fa-store',
+        icon: 'fas fa-cash-register',
+        desc: "Site démo pour une boutique de vêtements en ligne",
+        preview: 'preview-store-2.png',
+        href: 'https://demo-4store.herokuapp.com',
     },
     {
         id: 3,
