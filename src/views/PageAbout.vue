@@ -57,7 +57,7 @@
               </div>
             </div>
 
-            <a href="/cv-porrani-22.pdf"
+            <a href="/cv-porrani-23.pdf"
                class="btn btn-accent text-light d-block w-fit-content mx-auto res-fs-6 res-fs-md-7 mt-5"
                title="télécharger mon CV"
                target="_blank"

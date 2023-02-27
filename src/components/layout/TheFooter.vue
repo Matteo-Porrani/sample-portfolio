@@ -4,7 +4,7 @@
       <div class="row">
         <div class="col text-center">
 
-          <p>MP &copy; 2022</p>
+          <p>Matteo Porrani &copy; 2023</p>
 
 <!--          <p>-->
 <!--            <i class="fas fa-quote-left res-fs-4 px-2"></i>-->

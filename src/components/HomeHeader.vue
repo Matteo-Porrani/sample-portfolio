@@ -11,14 +11,16 @@
     </div>
 
     <div class="resume">
-      <p class="res-fs-5 res-fs-md-7">
+      <p class="res-fs-5 res-fs-md-6">
         Après une formation bootcamp à <b>La Passerelle</b>,
-        <br>j’ai commencé à expérimenter avec les différents langages et frameworks<br> à travers des projets
+        <br>j’ai commencé à expérimenter avec différents langages et frameworks<br> à travers des projets
         personnels.
         <br>
         <br>
-        En mai 2022 j’ai intégré l’équipe de la billetterie en ligne <b>Ticketac.com</b>,
-        <br>où je continue ma montée en compétences avec Symfony & VueJS.
+        Une première expérience chez <b>Ticketac.com</b>,
+        <br>m'a permis de monter en compétences avec Symfony & VueJS.
+        <br>
+        En janvier 2023 j'ai intégré l'agence de marketing digital <b>Waisso</b>.
       </p>
     </div>
 
