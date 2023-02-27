@@ -35,23 +35,28 @@
 
                 <p class="res-fs-5 res-fs-md-7">
                 <span>
-                  Attiré depuis toujours par l’univers numérique, après une initiation à la programmation en autodidacte avec le langage VBA, en 2019 j'ai commencé à m'intéresser aux fondamentaux du web, notamment HTML et CSS.
+                  Attiré depuis toujours par l’univers numérique, j'ai commencer à coder en autodidacte avec le langage VBA.
                 </span>
                   <br>
                   <br>
                   <span>
-                  En décembre 2020 j’ai décidé de me reconvertir en intégrant le bootcamp <b>Développeur Web & Web Mobile</b> de l'école <b>La Passerelle</b> (Paris 19e), une formation de 5 mois avec au programme : JavaScript, PHP, NodeJS, React, Symfony et MySQL / phpMyAdmin.
+                  En décembre 2020 j’ai décidé de me reconvertir en intégrant le bootcamp <b>Développeur Web & Web Mobile</b> de l'école <b>La Passerelle</b> (Paris 19e), une formation de 5 mois avec au programme : JavaScript, PHP, NodeJS, React, Symfony et SQL.
                 </span>
                   <br>
                   <br>
                   <span>
-                  Par la suite, j’ai continué à approfondir les différents langages et frameworks par la pratique, à travers des projets personnels et grâce à différentes ressources complémentaires (Vue School, Udemy, Frontend Mentor, freeCodeCamp.org).
+                  Par la suite, j’ai continué à approfondir les différents langages et frameworks par la pratique, à travers des projets personnels et des ressources complémentaires (Vue School, Udemy, Frontend Mentor, freeCodeCamp.org).
                 </span>
                   <br>
                   <br>
                   <span>
                   En mai 2022 j'ai intégré l'équipe de <b>Ticketac.com</b>, d'abord en stage puis en CDD, en tant que développeur fullstack <b>Symfony / VueJS</b>.
                 </span>
+                  <br>
+                  <br>
+                  <span>
+                    Actuellement je suis en poste dans l'agence de marketing digital <b>Waisso</b>.
+                  </span>
                 </p>
 
               </div>
