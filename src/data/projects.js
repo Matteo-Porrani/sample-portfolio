@@ -1,13 +1,12 @@
 const projects = [
     {
         id: 1,
-
         title: 'MGP Battle',
         // icon: 'fas fa-flag-checkered',
         icon: 'fas fa-trophy',
         desc: "Application web de pronostics sportifs pour grand prix moto",
         preview: 'preview-battle-2.png',
-        href: 'https://mgpbattle.alwaysdata.net'
+        href: 'https://mgpbattle.com'
     },
     {
         id: 2,
@@ -47,4 +46,3 @@ const projects = [
 ];
 
 export default projects;
-

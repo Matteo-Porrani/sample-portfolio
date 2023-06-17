@@ -8,7 +8,6 @@
           }"
   >
     <div class="container">
-
       <nav class="d-flex align-items-center justify-content-between gap-5">
 
         <router-link to="/" class="d-inline-block text-decoration-none w-75">
@@ -18,10 +17,11 @@
 
         <div class="w-50 d-flex justify-content-between">
           <!-- DESKTOP LINKS -->
-          <router-link v-for="link in headerLinks"
-                       :key="link.id"
-                       :to="link.path"
-                       class="d-none d-md-inline desktop-link res-fs-4 res-fs-md-5 link-light text-decoration-none">
+          <router-link
+            v-for="link in headerLinks"
+            :key="link.id"
+            :to="link.path"
+            class="d-none d-md-inline desktop-link res-fs-4 res-fs-md-5 link-light text-decoration-none">
             {{ link.label }}
           </router-link>
         </div>
@@ -33,16 +33,20 @@
           <i v-if="menuIsOpen" class="fas fa-times text-light res-fs-15 me-1"></i>
 
           <transition name="menu">
-            <div v-if="menuIsOpen"
-                 class="position-absolute bg-secondary shadow text-center rounded-3 end-0 p-3 mt-1"
-                 style="width: 60vw; z-index: 999;">
+            <div
+              v-if="menuIsOpen"
+              class="position-absolute bg-secondary shadow text-center rounded-3 end-0 p-3 mt-1"
+              style="width: 60vw; z-index: 999;"
+            >
               <router-link class="d-block res-fs-7 link-light text-decoration-none" to="/">Accueil
               </router-link>
 
-              <router-link v-for="link in headerLinks"
-                           :key="link.id"
-                           :to="link.path"
-                           class="d-block res-fs-7 link-light text-decoration-none mt-4">
+              <router-link
+                v-for="link in headerLinks"
+                :key="link.id"
+                :to="link.path"
+                class="d-block res-fs-7 link-light text-decoration-none mt-4"
+              >
                 {{ link.label }}
               </router-link>
             </div>
@@ -50,8 +54,8 @@
         </a>
 
       </nav>
-
     </div>
+
   </header>
 </template>
 
@@ -78,7 +82,6 @@ const toggleMenu = () => {
 @import '../../assets/variables.scss';
 
 header {
-
   &:after {
     transition: all 1s ease-in-out;
     position: absolute;

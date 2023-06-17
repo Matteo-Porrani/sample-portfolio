@@ -1,30 +1,6 @@
 const resumes = [
   {
     id: 1,
-    resume: `Pour mon premier projet en <strong>NodeJS</strong> j'ai voulu tester le
-                  fonctionnement d'une <strong>boutique en ligne</strong> avec ses besoins spécifiques, comme
-                  l'utilisation des <strong>filtres produit</strong> ou la manipulation des <strong>cookies</strong>
-                  pour la navigation interne et la gestion du panier.
-                  <br>
-                  <br>
-                  Le site est structuré sur <strong>5 pages</strong> : l'accueil, une page par genre avec les promotions
-                  en cours, une page de recherche par catégorie de vêtements, une page produit, et la page panier.
-                  <br>
-                  Le travail sur le <strong>responsive design</strong> a parfois été complèxe, notamment sur des
-                  sections du site qui présentent beaucoup d'informations à l'utilisateur et nécessitent une mise en page très différente entre
-                  mobile et desktop.
-                  <br>
-                  <br>
-                  Le back-end est construit en <strong>Node JS</strong>, avec <strong>Express</strong>, et
-                  <strong>EJS</strong> comme moteur de template, et une base de données <strong>MySQL</strong>. Côté
-                  front j'ai choisi l'option <strong>CSS "from scratch"</strong>.
-                  <br>
-                  <br>
-                  Toutes les photos proviennent du site <strong>unsplash.com</strong> et pour l'hébergement 
-                  j'ai utilisé la plateforme <strong>Heroku</strong> avec le module additionnel <strong>ClearDB</strong> pour les données.`,
-  },
-  {
-    id: 2,
     resume: `Étant passionné de compétitions moto, j'ai imaginé cette <strong>application web</strong> qui
                   permet de disputer un championnat de pronostics entre amis.
                   <br>
@@ -50,6 +26,30 @@ const resumes = [
                   Le site est pour l'instant <strong>"mobile only"</strong>, étant conçu en priorité pour smartphone. 
                   <br>
                   Il existe depuis juillet 2021, hébergé avec <strong>Alwaysdata</strong>, et compte une quinzaine d'utilisateurs réguliers.`,
+  },
+  {
+    id: 2,
+    resume: `Pour mon premier projet en <strong>NodeJS</strong> j'ai voulu tester le
+                  fonctionnement d'une <strong>boutique en ligne</strong> avec ses besoins spécifiques, comme
+                  l'utilisation des <strong>filtres produit</strong> ou la manipulation des <strong>cookies</strong>
+                  pour la navigation interne et la gestion du panier.
+                  <br>
+                  <br>
+                  Le site est structuré sur <strong>5 pages</strong> : l'accueil, une page par genre avec les promotions
+                  en cours, une page de recherche par catégorie de vêtements, une page produit, et la page panier.
+                  <br>
+                  Le travail sur le <strong>responsive design</strong> a parfois été complèxe, notamment sur des
+                  sections du site qui présentent beaucoup d'informations à l'utilisateur et nécessitent une mise en page très différente entre
+                  mobile et desktop.
+                  <br>
+                  <br>
+                  Le back-end est construit en <strong>Node JS</strong>, avec <strong>Express</strong>, et
+                  <strong>EJS</strong> comme moteur de template, et une base de données <strong>MySQL</strong>. Côté
+                  front j'ai choisi l'option <strong>CSS "from scratch"</strong>.
+                  <br>
+                  <br>
+                  Toutes les photos proviennent du site <strong>unsplash.com</strong> et pour l'hébergement 
+                  j'ai utilisé la plateforme <strong>Heroku</strong> avec le module additionnel <strong>ClearDB</strong> pour les données.`,
   },
   {
     id: 3,

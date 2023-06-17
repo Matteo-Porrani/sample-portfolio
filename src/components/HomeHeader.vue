@@ -7,22 +7,41 @@
     </header>
 
     <div class="avatar">
-      <img class="shadow" src="../assets/images/avatar1_660x660.jpg" alt="matteo">
+      <img
+        class="shadow"
+        src="../assets/images/avatar1_660x660.jpg"
+        alt="matteo"
+      >
     </div>
 
     <div class="resume">
       <p class="res-fs-5 res-fs-md-6">
         Après une formation bootcamp à <b>La Passerelle</b>,
-        <br>j’ai commencé à expérimenter avec différents langages et frameworks<br> à travers des projets
-        personnels.
+        <br>j’ai commencé à expérimenter avec différents langages et frameworks.
         <br>
         <br>
         Une première expérience chez <b>Ticketac.com</b>,
         <br>m'a permis de monter en compétences avec Symfony & VueJS.
         <br>
-        En janvier 2023 j'ai intégré l'agence de marketing digital <b>Waisso</b>.
+        <br>
+        Après une courte collaboration avec l'agence de marketing digital <b>Waisso</b>,
+        <br>en avril 2023 j'ai intégré l'équipe de développement Frontend de <b>Cegedim SRH</b>.
       </p>
     </div>
+
+    <!--    <div class="resume">-->
+    <!--      <p class="res-fs-5 res-fs-md-6">-->
+    <!--        Après une formation bootcamp à <b>La Passerelle</b>,-->
+    <!--        <br>j’ai commencé à expérimenter avec différents langages et frameworks<br> à travers des projets-->
+    <!--        personnels.-->
+    <!--        <br>-->
+    <!--        <br>-->
+    <!--        Une première expérience chez <b>Ticketac.com</b>,-->
+    <!--        <br>m'a permis de monter en compétences avec Symfony & VueJS.-->
+    <!--        <br>-->
+    <!--        En janvier 2023 j'ai intégré l'agence de marketing digital <b>Waisso</b>.-->
+    <!--      </p>-->
+    <!--    </div>-->
 
   </div>
 </template>
@@ -35,7 +54,6 @@
 
 b {
   border-bottom: 2px solid $primary;
-
   @media (min-width: 1200px) {
     border-color: $light;
   }
@@ -56,7 +74,6 @@ b {
     grid-template-columns: 8fr 4fr;
     grid-template-rows: 1fr 1fr auto;
   }
-
 }
 
 header {
@@ -89,7 +106,6 @@ header {
 
     padding-top: 0;
   }
-
 }
 
 .avatar {
@@ -97,7 +113,6 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-
 
   @media (min-width: 768px) {
     padding-block: 32px;
@@ -119,6 +134,5 @@ header {
       width: 80%; /* of its container... */
     }
   }
-
 }
 </style>
